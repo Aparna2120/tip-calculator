@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+<body>
+    <div class="tip">
+        <form>
+            <h2>Tip Calculator</h2>
+            <div class="mb-3">
+                <label for="bill" class="form-label">Bill Amount </label>
+                <input type="text" class="form-control" id="bill" aria-describedby="emailHelp">
+
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Tip %</label>
+                <input type="number" class="form-control" id="tip">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Split the Bill?</label>
+                <input type="number" class="form-control" id="split">
+            </div>
+            <div>
+                <a type="submit" class="btn btn-success clr">Clear</a>
+                <a type="submit" class="btn btn-success calc">Calculate</a>
+            </div>
+
+
+
+            <div class="d-flex flex-column answer">
+                <p>Tip Each Person: <span class="tpe"> </span></p>
+                <p>Total Each Person: <span class="tep"> </span></p>
+                <p>Tip total: <span class="tt"> </span></p>
+                <p>Total (Bill + Tip): <span class="tbt"></span></p>
+            </div>
+
+
+        </form>
+    </div>
+
+    <script src="assets/js/tc.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
